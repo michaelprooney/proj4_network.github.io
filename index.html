@@ -34,77 +34,15 @@ body {
     </p>
 <!-- earth raster -->
 
-    <div id="observablehq-earth-97e6d27e"></div>
-<!--     <p>Credit: <a href="https://observablehq.com/d/5cdc862dfe002e14">Plot: Choropleth by Michael Rooney&#039;s Workspace</a></p> -->
-    
+    <div id="observablehq-adjacencyMatrix-d355addd"></div>
+<!-- <p>Credit: <a href="https://observablehq.com/d/db414cb6ae45928e@588">Biblical Cross-References by Michael Rooney&#039;s Workspace</a></p> -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/5cdc862dfe002e14.js?v=4";
+    import define from "https://api.observablehq.com/d/db414cb6ae45928e@588.js?v=4";
     new Runtime().module(define, name => {
-      if (name === "earth") return new Inspector(document.querySelector("#observablehq-earth-97e6d27e"));
-    });
-    </script>
-
-    <p>
-      Above we can see Northern Africa, India, and China are all hotspots for PM2.5 Pollution. Let's zoom in on China and examine the distribution of this pollution. 
-    </p>
-    
-<!-- chinese raster -->
-    
-    <div id="observablehq-china_average_change-94fce63b"></div>
-<!--     <p>Credit: <a href="https://observablehq.com/d/5cdc862dfe002e14@877">Plot: Choropleth by Michael Rooney&#039;s Workspace</a></p> -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/5cdc862dfe002e14@877.js?v=4";
-    new Runtime().module(define, name => {
-      if (name === "china_average_change") return new Inspector(document.querySelector("#observablehq-china_average_change-94fce63b"));
-    });
-    </script>
-
-    <p>
-      "Xinjiang's air pollution stems not only from coal-fired power plants, but also coal mining, vehicle emissions, industrial factories, and underground coal fires. In 2007, an underground coal fire that had been burning for over 50 years in the Terak minefield near Urumqi was finally put out." [<a href=https://www.wilsoncenter.org/publication/environmental-health-challenges-xinjiang>Source</a>]
-    </p>
-
-    <p>
-      Now, let's check our hypothesis and compare the raster data above to the graph representing GDP by administrative division. 
-    </p>
-    
-<!--     chinese gdp -->
-    
-    <div id="observablehq-chinese_gdp-50846c18"></div>
-<!--     <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee@276">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p> -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/688db500f64fb2ee@276.js?v=4";
-    new Runtime().module(define, name => {
-      if (name === "chinese_gdp") return new Inspector(document.querySelector("#observablehq-chinese_gdp-50846c18"));
-    });
-    </script>
-
-    <p>
-      If you notice the trend is largely adhered to. However, the major outlier and the source of the greatest amount of pollution in China is the 
-      town of Urumqi in Xinjiang Province. Now, my first thought was the Uyghur Population being housed there can't be a coincidence. So, I plotted 
-      the overlay of damaged cultural sites and PRC detention centers below.
-    </p>
-    
-<!--     xinjiang province data overlay -->
-
-   <div id="observablehq-viewof-data_selector-65248d73"></div>
-    <div id="observablehq-xinjiang_province_sites-65248d73"></div>
-<!--     <p>Credit: <a href="https://observablehq.com/d/688db500f64fb2ee@276">Ethnic Cleansing in Xinjiang Province by Michael Rooney&#039;s Workspace</a></p> -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/688db500f64fb2ee@276.js?v=4";
-    new Runtime().module(define, name => {
-      if (name === "viewof data_selector") return new Inspector(document.querySelector("#observablehq-viewof-data_selector-65248d73"));
-      if (name === "xinjiang_province_sites") return new Inspector(document.querySelector("#observablehq-xinjiang_province_sites-65248d73"));
+      if (name === "adjacencyMatrix") return new Inspector(document.querySelector("#observablehq-adjacencyMatrix-d355addd"));
     });
     </script>
   </body>
