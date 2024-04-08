@@ -33,17 +33,7 @@ body {
       the data regarding GDP was found from this <a href=https://en.wikipedia.org/wiki/Economy_of_China>Wikipedia</a> page and the dataset for the Xinjiang province visualization came from <a href=https://xjdp.aspi.org.au/map/?>the Xinjiang Data Project</a>. 
     </p>
 <!-- earth raster -->
-    <div id="observablehq-blueLegend-ab63150f"></div>
-<!--     <p>Credit: <a href="https://observablehq.com/d/db414cb6ae45928e@589">Biblical Cross-References by Michael Rooney&#039;s Workspace</a></p> -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/db414cb6ae45928e@589.js?v=4";
-    new Runtime().module(define, name => {
-      if (name === "blueLegend") return new Inspector(document.querySelector("#observablehq-blueLegend-ab63150f"));
-    });
-    </script>
 
     <div id="observablehq-adjacencyMatrix-d355addd"></div>
 <!-- <p>Credit: <a href="https://observablehq.com/d/db414cb6ae45928e@588">Biblical Cross-References by Michael Rooney&#039;s Workspace</a></p> -->
@@ -54,6 +44,18 @@ body {
     import define from "https://api.observablehq.com/d/db414cb6ae45928e@588.js?v=4";
     new Runtime().module(define, name => {
       if (name === "adjacencyMatrix") return new Inspector(document.querySelector("#observablehq-adjacencyMatrix-d355addd"));
+    });
+    </script>
+
+    <div id="observablehq-blueLegend-ab63150f"></div>
+<!--     <p>Credit: <a href="https://observablehq.com/d/db414cb6ae45928e@589">Biblical Cross-References by Michael Rooney&#039;s Workspace</a></p> -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/db414cb6ae45928e@589.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "blueLegend") return new Inspector(document.querySelector("#observablehq-blueLegend-ab63150f"));
     });
     </script>
   </body>
