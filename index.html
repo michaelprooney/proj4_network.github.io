@@ -1,118 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Population Density</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-size: 18px; /* Default text size */
-            line-height: 1.6; /* Increase line spacing */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .main-container {
-            padding: 40px; /* Adjust padding as needed */
-            max-width: 1200px; /* Maximum width of the content */
-            width: 100%; /* Make it responsive */
-            box-sizing: border-box;
-            border: 10in;
-        }
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .content, .iframe-container {
-            flex: 1; /* Adjust the width as necessary */
-        }
-        iframe {
-            width: 100%;
-            height: 1000px; /* Adjust the height as necessary */
-            border: none;
-        }
-        h1 {
-            font-size: 40px;
-            text-align: center;
-            line-height: 1.4; /* Custom line spacing for h1 */
-            font-family:'Trebuchet MS';
-        }
-        h2 {
-            font-size: 28px;
-            text-align: center;
-            line-height: 1.4; /* Custom line spacing for h2 */
-            font-family:'Trebuchet MS';
-        }
-        h3 {
-            font-size: 24px;
-            text-align: center;
-            line-height: 0.1; /* Custom line spacing for h3 */
-            font-family:'Trebuchet MS';
-        }
-        h4, p {
-            font-size: 20px;
-            text-align: left;
-            line-height: 2; /* Increased line spacing */
-            font-family:'Trebuchet MS';
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            width: 100%;
-        }
-    </style>
-</head>
-<body style="background-color:rgb(252, 239, 219);">
-    <div class="main-container">
-      <h1>Population Density in the United States (2000)</h1>
-                <h3>by Calvin Lu</h3>
-                <br>
-                <center><h3>Raster data visualization on population density across the United States.<h3></center>
-                <br>
-        <div class="flex-container">
-            <div class="content">
-                <p>
-                  The project will illustrate the population density in states across the Continental United States. Population density influences various 
-              socio-economic factors and public policies such as education districts and federal funding. By illustrating population density across the country, the visualizations will
-              display patterns between population density, borders, cities, and capitals. In many cases, the state's capital is located in a major metropolitan
-              area. This project will generate 
-              a deeper understanding of population density and spark new inquiries for implications concerning urbanization and overcrowding. 
-                </p>
-              <br>
-              <p><b>I hypothesize that cities with the highest population densities will be near the state's capital.</b></p>
-              <br>
-                <p>
-                  We will be analyzing the population density across the United States.
-              The data driving this graph is sourced from the <a href="https://sedac.ciesin.columbia.edu/">NASA's Socio-Economic Data and Applications Center</a> on 
-              <a href="https://sedac.ciesin.columbia.edu/data/set/usgrid-summary-file1-2000">U.S. Census Grids</a> in 2000.
-              The visualizations on the right display the population density. Use the selectors to overlay various other data and the color drop down menu to select a day/night color scheme.
-              For the example dataset, please use this <a href="https://drive.google.com/file/d/14cULYRnHLB8xHZrv9Fzdx6Y6mruq0hW-/view?usp=sharing">link</a>.
-                </p>
-            </div>
-            <div class="iframe-container">
-                <iframe width="100%" height="1124" frameborder="0"
-                src="https://observablehq.com/embed/575299076536b2d9@385?cells=viewof+tiff_file%2Cviewof+choose%2Cviewof+color_2%2Cus_plot%2Cus_plot_zoom&api_key=f15869b53458d5405539ad23789ccfbc6823953d"></iframe>
-            </div>
-        </div>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/db414cb6ae45928e@588.js?v=4";
-        new Runtime().module(define, name => {
-          if (name === "adjacencyMatrix") return new Inspector(document.querySelector("#observablehq-adjacencyMatrix-d355addd"));
-        });
-        </script>
-    </div>
-    <script src="index.js"></script>
-</body>
-</html>
-
-<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,7 +15,7 @@ body {
     <h4>Chinese Pollution Raster Data Exploration</h4>
 <!--     <p> <a href=https://chinapower.csis.org/china-demographics-challenges/>many experts</a> </p> -->
 
-<!--     <p>
+    <p>
       A prominent measure of air quality is done using different micron diameters of Particulate Matter. The main subset we will be focusing on will be Particulate Matter of
       a size lesser than 2.5 microns. 
     </p>
@@ -149,10 +35,10 @@ body {
 <!-- earth raster -->
     
 
-<!--     <div id="observablehq-adjacencyMatrix-d355addd"></div>
+    <div id="observablehq-adjacencyMatrix-d355addd"></div>
 <!-- <p>Credit: <a href="https://observablehq.com/d/db414cb6ae45928e@588">Biblical Cross-References by Michael Rooney&#039;s Workspace</a></p> -->
 
-<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
     import define from "https://api.observablehq.com/d/db414cb6ae45928e@588.js?v=4";
@@ -160,18 +46,18 @@ body {
       if (name === "adjacencyMatrix") return new Inspector(document.querySelector("#observablehq-adjacencyMatrix-d355addd"));
     });
     </script>
- --> 
-<!--     <div id="observablehq-blueLegend-ab63150f"></div>
+ 
+     <div id="observablehq-blueLegend-ab63150f"></div>
 <!--     <p>Credit: <a href="https://observablehq.com/d/db414cb6ae45928e@589">Biblical Cross-References by Michael Rooney&#039;s Workspace</a></p> -->
     
-<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"> -->
-<!--     <script type="module"> -->
-<!--     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js"; --> -->
-<!--     import define from "https://api.observablehq.com/d/db414cb6ae45928e@589.js?v=4"; -->
-<!--     new Runtime().module(define, name => { -->
-<!--       if (name === "blueLegend") return new Inspector(document.querySelector("#observablehq-blueLegend-ab63150f")); -->
-<!--     }); -->
-<!--     </script> -->
-<!--   </body> -->
-<!-- </html> --> 
-<!--  --> 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"> 
+     <script type="module"> 
+     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js"; --> -->
+     import define from "https://api.observablehq.com/d/db414cb6ae45928e@589.js?v=4"; -->
+     new Runtime().module(define, name => { -->
+     if (name === "blueLegend") return new Inspector(document.querySelector("#observablehq-blueLegend-ab63150f")); -->
+     }); 
+     </script> 
+  </body> 
+</html>
+
